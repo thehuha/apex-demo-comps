@@ -50,7 +50,7 @@ prompt APPLICATION 200 - Countries Demo App
 -- Application Export:
 --   Application:     200
 --   Name:            Countries Demo App
---   Date and Time:   20:08 Ponedjeljak Listopad 29, 2018
+--   Date and Time:   20:15 Ponedjeljak Listopad 29, 2018
 --   Exported By:     HR
 --   Flashback:       0
 --   Export Type:     Component Export
@@ -83,7 +83,7 @@ wwv_flow_api.create_page(
 ,p_page_template_options=>'#DEFAULT#'
 ,p_protection_level=>'C'
 ,p_last_updated_by=>'DHUHA'
-,p_last_upd_yyyymmddhh24miss=>'20181024200039'
+,p_last_upd_yyyymmddhh24miss=>'20181029201432'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(2656387504569240)
@@ -123,6 +123,20 @@ wwv_flow_api.create_worksheet(
 ,p_download_formats=>'CSV:HTML:EMAIL:XLS:PDF:RTF'
 ,p_detail_link_text=>'<img src="#IMAGE_PREFIX#app_ui/img/icons/apex-edit-pencil.png" class="apex-edit-pencil" alt="Edit">'
 ,p_internal_uid=>2668213343569270
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(4212099962107501)
+,p_plug_name=>'Test Regija'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(2568901493568920)
+,p_plug_display_sequence=>20
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_new_grid_row=>false
+,p_plug_new_grid_column=>false
+,p_plug_display_point=>'BODY'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
 );
 wwv_flow_api.create_page_button(
  p_id=>wwv_flow_api.id(2668362304569270)
